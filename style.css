@@ -549,22 +549,6 @@ body {
 
 /* --- Responsive --- */
 @media (max-width: 1024px) {
-  .bento-container-desktop {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 24px !important;
-    height: auto !important;
-  }
-  [class^="gd-bento-"] {
-    position: relative !important;
-    width: 100% !important;
-    top: auto !important;
-    left: auto !important;
-    margin-bottom: 0 !important;
-  }
-  .gd-bento-4 {
-    grid-column: span 2;
-  }
   .cta-card {
     padding: 48px 32px;
   }
@@ -576,12 +560,6 @@ body {
   }
   .nav-links {
     display: none !important;
-  }
-  .bento-container-desktop {
-    grid-template-columns: 1fr !important;
-  }
-  .gd-bento-4 {
-    grid-column: span 1;
   }
   .bento-card, .case-card {
     border-radius: 32px;

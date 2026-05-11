@@ -549,11 +549,19 @@ body {
 
 /* --- Responsive --- */
 @media (max-width: 1279px) {
+  .cta-card {
+    padding: 48px 32px;
+  }
+}
+
+@media (max-width: 767px) {
   .bento-container-desktop {
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: 1fr !important;
     gap: 24px !important;
     height: auto !important;
+    transform: none !important;
+    margin-bottom: 0 !important;
   }
   [class^="gd-bento-"] {
     position: relative !important;
@@ -563,25 +571,13 @@ body {
     margin-bottom: 0 !important;
   }
   .gd-bento-4 {
-    grid-column: span 2;
+    grid-column: span 1;
   }
-  .cta-card {
-    padding: 48px 32px;
-  }
-}
-
-@media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
   .nav-links {
     display: none !important;
-  }
-  .bento-container-desktop {
-    grid-template-columns: 1fr !important;
-  }
-  .gd-bento-4 {
-    grid-column: span 1;
   }
   .bento-card, .case-card {
     border-radius: 32px;
@@ -644,12 +640,12 @@ body {
   background: var(--on-surface-muted);
 }
 
-/* --- Precision Bento Grid Layout (Desktop) --- */
-@media (min-width: 1280px) {
+/* --- Precision Bento Grid Layout (Tablet/Laptop/Desktop) --- */
+@media (min-width: 768px) {
   .bento-container-desktop {
     position: relative !important;
-    width: 100% !important;
-    max-width: 1200px !important; /* Expanded to 1200px for more space */
+    width: 1200px !important;
+    max-width: 1200px !important;
     margin: 0 auto !important;
     height: 800px !important;
     display: block !important;
@@ -668,4 +664,20 @@ body {
   .gd-bento-7 { top: 320px !important; left: 820px !important; width: 340px !important; z-index: 0 !important; }
   .gd-bento-5 { top: 460px !important; left: 640px !important; width: 380px !important; z-index: 20 !important; }
   .gd-bento-6 { top: 560px !important; left: 40px !important; width: 280px !important; z-index: 40 !important; transform: rotate(-6deg) !important; }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .bento-container-desktop {
+    transform: scale(0.85);
+    transform-origin: top center;
+    margin-bottom: -120px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .bento-container-desktop {
+    transform: scale(0.60);
+    transform-origin: top center;
+    margin-bottom: -320px !important;
+  }
 }

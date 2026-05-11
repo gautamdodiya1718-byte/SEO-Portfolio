@@ -57,6 +57,16 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = '';
       });
     });
+
+    // Dedicated close button
+    const mobileCloseBtn = document.getElementById('mobile-close-btn');
+    if (mobileCloseBtn) {
+      mobileCloseBtn.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    }
   }
 
   // --- Smooth scroll for anchor links ---

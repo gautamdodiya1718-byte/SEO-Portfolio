@@ -1,0 +1,671 @@
+/* ============================================
+   Gautam Dodiya Portfolio — Custom Styles
+   Design System: "Organic Systems"
+   ============================================ */
+
+/* --- CSS Custom Properties --- */
+:root {
+  --surface: #FEF8F2;
+  --surface-container: #F8F3ED;
+  --surface-container-high: #F3EDE7;
+  --surface-dim: #E7E2DC;
+  --surface-bright: #FFFFFF;
+  --primary: #8C4E2D;
+  --primary-dark: #713819;
+  --primary-light: #F4A47C;
+  --primary-lighter: #FFB692;
+  --primary-lightest: #FFDBCB;
+  --secondary: #4D6450;
+  --secondary-light: #C7E1C8;
+  --tertiary: #D6B35B;
+  --tertiary-dark: #765A05;
+  --tertiary-light: #FFDF96;
+  --on-surface: #1D1B18;
+  --on-surface-muted: #53433C;
+  --border-subtle: #E7E2DC;
+  --border-outline: rgba(216, 194, 185, 0.3);
+  --glass-bg: rgba(248, 243, 237, 0.8);
+  --glass-border: rgba(216, 194, 185, 0.3);
+  --dark-surface: #32302C;
+  --dark-surface-light: #F6F0EA;
+  --shadow-warm: rgba(140, 78, 45, 0.04);
+  --shadow-warm-md: rgba(140, 78, 45, 0.08);
+  --shadow-warm-lg: rgba(140, 78, 45, 0.1);
+  --font-primary: 'Plus Jakarta Sans', sans-serif;
+  --font-accent: 'Caveat', cursive;
+}
+
+/* --- Base Reset & Typography --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-primary);
+  background: var(--surface);
+  color: var(--on-surface);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* --- Sticky Glass Navigation --- */
+.nav-glass {
+  background: transparent;
+  transition: background 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease;
+}
+
+.nav-glass.scrolled {
+  background: rgba(254, 248, 242, 0.8);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* --- Floating Badge Animation --- */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(-2deg); }
+  50% { transform: translateY(-6px) rotate(-2deg); }
+}
+
+@keyframes float-reverse {
+  0%, 100% { transform: translateY(0px) rotate(2deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+.float-badge {
+  animation: float 4s ease-in-out infinite;
+}
+
+.float-badge-slow {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+.float-badge-reverse {
+  animation: float-reverse 4.5s ease-in-out infinite;
+}
+
+/* --- Glassmorphic Badge --- */
+.glass-badge {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 9999px;
+}
+
+/* --- Decorative Blurred Blobs --- */
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(32px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blob-primary {
+  background: var(--primary-light);
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+}
+
+.blob-tertiary {
+  background: var(--tertiary);
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+}
+
+.blob-secondary {
+  background: var(--secondary-light);
+  opacity: 0.2;
+  filter: blur(60px);
+}
+
+.blob-accent {
+  background: rgba(244, 164, 124, 0.2);
+  filter: blur(50px);
+}
+
+/* --- Stat Card with Tilt --- */
+.stat-card {
+  border-radius: 48px;
+  padding: 16px;
+  box-shadow: 0px 8px 40px -12px var(--shadow-warm-lg);
+  isolation: isolate;
+}
+
+.stat-card-value {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.75px;
+}
+
+.stat-card-label {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* --- Bento Card Styles --- */
+.bento-card {
+  background: var(--surface-bright);
+  border: 1px solid var(--border-subtle);
+  border-radius: 48px;
+  padding: 32px;
+  box-shadow: 0px 10px 40px -10px var(--shadow-warm);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  isolation: isolate;
+  position: relative;
+}
+
+.bento-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 24px 48px -12px rgba(140, 78, 45, 0.15);
+}
+
+/* Universal hover for all hardcoded Bento Grid cards */
+[class^="gd-bento-"] {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+[class^="gd-bento-"]:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0px 24px 48px -12px rgba(140, 78, 45, 0.15) !important;
+}
+
+.bento-card-warm {
+  background: var(--surface-container);
+  border: none;
+}
+
+.bento-card-dark {
+  background: var(--primary);
+  border: none;
+  color: white;
+}
+
+.bento-card-dark .bento-desc {
+  color: var(--primary-lightest);
+}
+
+.bento-card-peach {
+  background: var(--primary-lighter);
+  border: none;
+}
+
+.bento-card-muted {
+  background: var(--surface-dim);
+  border: none;
+}
+
+.bento-card-darkest {
+  background: var(--dark-surface);
+  border: none;
+  color: var(--dark-surface-light);
+}
+
+/* --- Mini Sparkline Bar Chart --- */
+.sparkline-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  padding: 0 8px 8px;
+  background: var(--surface-container);
+  border-radius: 32px;
+  height: 96px;
+}
+
+.sparkline-bar {
+  flex: 1;
+  border-radius: 2px 2px 0 0;
+  transition: height 0.6s ease;
+}
+
+/* --- Case Study Card --- */
+.case-card {
+  background: var(--surface-container);
+  border-radius: 48px;
+  padding: 32px;
+  box-shadow: 0px 10px 40px -10px var(--shadow-warm);
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.case-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 24px 48px -12px rgba(140, 78, 45, 0.15);
+}
+
+.case-card-inner {
+  background: var(--surface-bright);
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 32px;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.case-stat-box {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 32px;
+  padding: 16px;
+}
+
+/* --- Handwritten Note --- */
+.handwritten-note {
+  font-family: var(--font-accent);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+/* --- Tool Icon Card --- */
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 0;
+  border-radius: 24px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-3px) rotate(0deg) !important;
+  box-shadow: 0px 10px 20px -10px var(--shadow-warm-md);
+}
+
+/* --- CTA Section --- */
+.cta-section {
+  background: var(--dark-surface);
+}
+
+.cta-card {
+  background: var(--surface);
+  box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.15);
+  border-radius: 48px;
+  padding: 96px;
+}
+
+/* --- Button Styles --- */
+.btn-primary {
+  background: var(--primary);
+  color: #FFFFFF;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  padding: 16px 32px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0px 8px 20px rgba(140, 78, 45, 0.3);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, background 0.2s ease;
+  text-decoration: none;
+  line-height: 17px;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-4px);
+  box-shadow: 0px 12px 24px rgba(140, 78, 45, 0.4);
+}
+
+.btn-secondary {
+  background: var(--surface);
+  color: var(--on-surface);
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  padding: 16px 32px;
+  border-radius: 9999px;
+  border: 2px solid #D8C2B9;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease, border-color 0.2s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  line-height: 17px;
+}
+
+.btn-secondary:hover {
+  background: var(--surface-container);
+  transform: translateY(-4px);
+  border-color: var(--primary-light);
+  box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.05);
+}
+
+.btn-nav {
+  background: var(--primary);
+  color: #FFFFFF;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 16px;
+  padding: 8px 24px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.btn-nav:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 16px rgba(140, 78, 45, 0.3);
+}
+
+/* --- Scroll Reveal --- */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Section Tag --- */
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+/* --- Floating Accent Pill --- */
+.accent-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface-bright);
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0px 10px 30px rgba(140, 78, 45, 0.06);
+  border-radius: 9999px;
+  padding: 16px 24px;
+}
+
+/* --- Tag Chips --- */
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  background: var(--surface-dim);
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.7px;
+  color: var(--on-surface);
+}
+
+.tag-chip-gold {
+  background: var(--tertiary);
+  color: #5B4500;
+  border: 1px solid var(--tertiary-light);
+}
+
+.tag-chip-muted {
+  background: rgba(140, 78, 45, 0.05);
+  color: var(--primary);
+  border-radius: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 4px 8px;
+}
+
+.tag-chip-golden {
+  background: rgba(214, 179, 91, 0.3);
+  color: #5B4500;
+  border-radius: 9999px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 4px 12px;
+}
+
+/* --- Footer --- */
+.footer {
+  background: var(--surface-container);
+  border-radius: 48px 48px 0 0;
+}
+
+/* --- Mobile Menu Overlay --- */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--surface);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-menu.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mobile-menu a {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--on-surface);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobile-menu a:hover {
+  color: var(--primary);
+}
+
+/* --- Hamburger Icon --- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 110;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: var(--on-surface-muted);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* --- Icon Badge Circle --- */
+.icon-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+/* --- Case study image placeholder --- */
+.case-study-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .bento-container-desktop {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+    height: auto !important;
+  }
+  [class^="gd-bento-"] {
+    position: relative !important;
+    width: 100% !important;
+    top: auto !important;
+    left: auto !important;
+    margin-bottom: 0 !important;
+  }
+  .gd-bento-4 {
+    grid-column: span 2;
+  }
+  .cta-card {
+    padding: 48px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-links {
+    display: none !important;
+  }
+  .bento-container-desktop {
+    grid-template-columns: 1fr !important;
+  }
+  .gd-bento-4 {
+    grid-column: span 1;
+  }
+  .bento-card, .case-card {
+    border-radius: 32px;
+    padding: 24px;
+  }
+  .hero-stats-left, .hero-stats-right {
+    display: none;
+  }
+  .cta-card {
+    padding: 40px 24px;
+    border-radius: 32px;
+  }
+  .footer-inner {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+}
+
+
+/* --- Misc Utility --- */
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--primary), var(--tertiary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  color: var(--primary);
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.link-arrow:hover {
+  gap: 12px;
+}
+
+/* Hide scrollbar for cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--on-surface-muted);
+}
+
+/* --- Precision Bento Grid Layout (Desktop) --- */
+@media (min-width: 1024px) {
+  .bento-container-desktop {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 1200px !important; /* Expanded to 1200px for more space */
+    margin: 0 auto !important;
+    height: 850px !important;
+    display: block !important;
+  }
+  
+  .gd-bento-1, .gd-bento-2, .gd-bento-3, .gd-bento-4, .gd-bento-5, .gd-bento-6, .gd-bento-7 {
+    position: absolute !important;
+    margin: 0 !important;
+  }
+
+  /* Spaced out significantly to prevent content obscuring */
+  .gd-bento-1 { top: 0px !important; left: 0px !important; width: 360px !important; z-index: 10 !important; }
+  .gd-bento-2 { top: -20px !important; left: 340px !important; width: 340px !important; z-index: 20 !important; }
+  .gd-bento-3 { top: 80px !important; left: 660px !important; width: 420px !important; z-index: 10 !important; }
+  .gd-bento-4 { top: 280px !important; left: 180px !important; width: 500px !important; z-index: 30 !important; }
+  .gd-bento-7 { top: 320px !important; left: 820px !important; width: 340px !important; z-index: 0 !important; }
+  .gd-bento-5 { top: 460px !important; left: 640px !important; width: 380px !important; z-index: 20 !important; }
+  .gd-bento-6 { top: 560px !important; left: 40px !important; width: 280px !important; z-index: 40 !important; transform: rotate(-6deg) !important; }
+}

@@ -48,7 +48,7 @@
     </script>
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="style.css?v=10">
 </head>
 
 <body class="bg-[#FEF8F2] text-[#1D1B18] antialiased">
@@ -208,11 +208,13 @@
                     </p>
                 </div>
 
-                <!-- Bento Grid (Responsive Native Tailwind Grid) -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16 lg:mt-24 w-full">
+                <!-- Bento Grid (Freeform Overlapping Layout) -->
+                <div class="bento-container-desktop mt-16 lg:mt-24">
                     
-                    <!-- Card 1: Organic Growth (Large Span) -->
-                    <div class="lg:col-span-2 gd-bento-1 w-full bg-white border border-[#E7E2DC] rounded-[40px] p-10 scroll-reveal shadow-sm hover:-translate-y-1 transition-transform flex flex-col justify-between">
+                    <!-- Mobile Fallback Strategy: Stack them with margins on mobile -->
+
+                    <!-- Card 1: Organic Growth -->
+                    <div class="gd-bento-1 w-full bg-white border border-[#E7E2DC] rounded-[40px] p-10 scroll-reveal mb-6 lg:mb-0 shadow-sm hover:-translate-y-1 transition-transform">
                         <div class="flex items-center gap-3 mb-6">
                             <div class="w-10 h-10 rounded-full bg-[#F4A47C] flex items-center justify-center text-white">
                                 <span class="material-symbols-outlined text-[20px]">trending_up</span>
@@ -223,7 +225,7 @@
                         <p class="text-sm text-[#53433C] mb-8">monthly clicks within 6 months.</p>
                         
                         <!-- Sparkline -->
-                        <div class="flex items-end h-[60px] gap-1.5 w-full mt-auto">
+                        <div class="flex items-end h-[60px] gap-1.5 w-full">
                             <div class="flex-1 bg-[#C7E1C8] rounded-t-sm" style="height: 15%"></div>
                             <div class="flex-1 bg-[#C7E1C8] rounded-t-sm" style="height: 30%"></div>
                             <div class="flex-1 bg-[#C7E1C8] rounded-t-sm" style="height: 45%"></div>
@@ -233,7 +235,7 @@
                     </div>
 
                     <!-- Card 2: Organic Traffic -->
-                    <div class="gd-bento-2 w-full bg-white border border-[#E7E2DC] rounded-[40px] p-10 scroll-reveal shadow-[0_20px_40px_rgba(140,78,45,0.08)] hover:-translate-y-1 transition-transform">
+                    <div class="gd-bento-2 w-full bg-white border border-[#E7E2DC] rounded-[40px] p-10 scroll-reveal mb-6 lg:mb-0 shadow-[0_20px_40px_rgba(140,78,45,0.08)] hover:-translate-y-1 transition-transform">
                         <div class="flex items-center gap-3 mb-6">
                             <div class="w-10 h-10 rounded-full bg-[#D6B35B] flex items-center justify-center text-white">
                                 <span class="material-symbols-outlined text-[20px]">trending_up</span>
@@ -245,13 +247,13 @@
                     </div>
 
                     <!-- Card 3: Nexus SEO OS -->
-                    <div class="gd-bento-3 w-full bg-[#F6F4F0] rounded-[40px] p-10 scroll-reveal hover:-translate-y-1 transition-transform relative">
+                    <div class="gd-bento-3 w-full bg-[#F6F4F0] rounded-[40px] p-10 scroll-reveal mb-6 lg:mb-0 hover:-translate-y-1 transition-transform relative">
                         <div class="absolute -top-3 right-6 bg-[#D6B35B] text-[#5B4500] px-4 py-1 rounded-full text-xs font-bold shadow-md transform rotate-[4deg]">
                             System Design
                         </div>
                         <h3 class="text-3xl font-bold mb-4 mt-2 text-[#1D1B18] tracking-tight">Nexus SEO OS</h3>
                         <p class="text-sm text-[#53433C] mb-8 leading-relaxed">A 60-skill modular system for end-to-end strategy, team scaling, and operational excellence.</p>
-                        <div class="flex flex-wrap gap-2 mt-auto">
+                        <div class="flex flex-wrap gap-2">
                             <span class="bg-[#E7E2DC] text-[#1D1B18] px-3 py-1 rounded-full text-xs font-semibold">Strategy</span>
                             <span class="bg-[#E7E2DC] text-[#1D1B18] px-3 py-1 rounded-full text-xs font-semibold">Operations</span>
                             <span class="bg-[#E7E2DC] text-[#1D1B18] px-3 py-1 rounded-full text-xs font-semibold">Scaling</span>
@@ -259,8 +261,8 @@
                     </div>
 
                     <!-- Card 4: Flagship SaaS Launch -->
-                    <div class="lg:col-span-2 lg:row-span-2 md:col-span-2 gd-bento-4 w-full bg-[#8C4E2D] rounded-[48px] p-10 lg:p-12 scroll-reveal shadow-[0_30px_60px_rgba(140,78,45,0.2)] hover:-translate-y-1 transition-transform overflow-hidden relative flex flex-col justify-end min-h-[350px]">
-                        <div class="absolute -bottom-24 -right-24 w-[300px] h-[300px] bg-[#F4A47C] rounded-full blur-[80px] opacity-30 pointer-events-none"></div>
+                    <div class="gd-bento-4 w-full bg-[#8C4E2D] rounded-[48px] p-10 lg:p-12 scroll-reveal mb-6 lg:mb-0 shadow-[0_30px_60px_rgba(140,78,45,0.2)] hover:-translate-y-1 transition-transform overflow-hidden">
+                        <div class="absolute -bottom-24 -right-24 w-[300px] h-[300px] bg-[#F4A47C] rounded-full blur-[80px] opacity-30"></div>
                         <span class="font-cursive text-[#FFDBCB] text-2xl lg:text-3xl mb-2 block relative z-10">Flagship SaaS Launch</span>
                         <h3 class="text-6xl lg:text-7xl font-bold text-white mb-2 tracking-tighter relative z-10">3.4M</h3>
                         <p class="text-lg lg:text-xl font-medium text-white/90 mb-10 relative z-10">Impressions in Q1</p>
@@ -270,8 +272,14 @@
                         </div>
                     </div>
 
+                    <!-- Card 7: Ranked #2 (Placed here in DOM so it renders under Card 5 easily) -->
+                    <div class="gd-bento-7 w-full bg-[#EBEAE5] rounded-[40px] p-10 scroll-reveal mb-6 lg:mb-0 hover:-translate-y-1 transition-transform">
+                        <h3 class="text-2xl font-bold mb-3 text-[#1D1B18] tracking-tight">Ranked #2</h3>
+                        <p class="text-sm text-[#53433C] leading-relaxed">for high-intent, highly competitive industry target keywords.</p>
+                    </div>
+
                     <!-- Card 5: ContentOps Dashboard -->
-                    <div class="lg:col-span-2 md:col-span-2 gd-bento-5 w-full bg-white border border-[#E7E2DC] rounded-[40px] p-10 scroll-reveal shadow-xl hover:-translate-y-1 transition-transform relative">
+                    <div class="gd-bento-5 w-full bg-white border border-[#E7E2DC] rounded-[40px] p-10 scroll-reveal mb-6 lg:mb-0 shadow-xl hover:-translate-y-1 transition-transform relative">
                         <div class="w-10 h-10 rounded-full bg-[#C7E1C8] flex items-center justify-center mb-6 text-[#4D6450]">
                             <span class="material-symbols-outlined text-[20px]">grid_view</span>
                         </div>
@@ -280,6 +288,7 @@
                         <a href="#" class="text-xs font-bold text-[#8C4E2D] hover:text-[#713819] flex items-center gap-1 transition-colors uppercase tracking-wide">
                             View Case Study <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
                         </a>
+                        
                         <!-- Green Annotation -->
                         <div class="absolute -bottom-10 right-4 flex flex-col items-center rotate-[-6deg] pointer-events-none hidden lg:flex z-50">
                             <span class="font-cursive text-2xl text-[#4D6450]">Built in 3 weeks!</span>
@@ -287,18 +296,12 @@
                     </div>
 
                     <!-- Card 6: Avg Position (Tilted) -->
-                    <div class="gd-bento-6 w-full bg-[#FFB692] rounded-[32px] p-8 shadow-2xl scroll-reveal hover:-translate-y-1 transition-transform flex flex-col justify-center">
+                    <div class="gd-bento-6 w-full bg-[#FFB692] rounded-[32px] p-8 shadow-2xl scroll-reveal mb-6 lg:mb-0 hover:-translate-y-1 transition-transform">
                         <span class="text-[11px] font-bold tracking-widest uppercase text-[#713819] block mb-2">Avg Position</span>
                         <div class="flex justify-between items-end">
                             <h3 class="text-5xl font-bold text-[#1D1B18] tracking-tight">6.5</h3>
                             <span class="material-symbols-outlined text-[#1D1B18] text-2xl mb-1">insert_chart_outlined</span>
                         </div>
-                    </div>
-
-                    <!-- Card 7: Ranked #2 -->
-                    <div class="gd-bento-7 w-full bg-[#EBEAE5] rounded-[40px] p-10 scroll-reveal hover:-translate-y-1 transition-transform flex flex-col justify-center">
-                        <h3 class="text-2xl font-bold mb-3 text-[#1D1B18] tracking-tight">Ranked #2</h3>
-                        <p class="text-sm text-[#53433C] leading-relaxed">for high-intent, highly competitive industry target keywords.</p>
                     </div>
 
                 </div>

@@ -668,16 +668,18 @@ body {
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   .bento-container-desktop {
-    transform: scale(0.80);
-    transform-origin: top left;
+    left: 50% !important;
+    transform: translateX(-50%) scale(0.80) !important;
+    transform-origin: top center;
     margin-bottom: -160px !important;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .bento-container-desktop {
-    transform: scale(0.58);
-    transform-origin: top left;
+    left: 50% !important;
+    transform: translateX(-50%) scale(0.58) !important;
+    transform-origin: top center;
     margin-bottom: -336px !important;
   }
 }

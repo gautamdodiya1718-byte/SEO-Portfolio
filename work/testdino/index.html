@@ -1,123 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TestDino SEO Case Study | Gautam Dodiya</title>
-    <meta name="description" content="How SEO, technical coordination and editorial workflows supported TestDino's reported organic search growth.">
+    <meta name="description"
+        content="How SEO, technical coordination and editorial workflows supported TestDino's reported organic search growth.">
     <link rel="icon" type="image/png" href="../../GD_fav_icon.png">
     <link rel="shortcut icon" type="image/png" href="../../GD_fav_icon.png">
     <link rel="apple-touch-icon" href="../../GD_fav_icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            theme: { extend: {
-                colors: { surface: '#fef8f2', primary: '#8c4e2d', secondary: '#4d6450', tertiary: '#d6b35b', 'on-surface': '#171717', brown: '#564538' },
-                fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'], display: ['Plus Jakarta Sans', 'sans-serif'], cursive: ['Caveat', 'cursive'] },
-                borderRadius: { xl: '2rem', '2xl': '3rem' }
-            }}
+            theme: {
+                extend: {
+                    colors: { surface: '#fef8f2', primary: '#8c4e2d', secondary: '#4d6450', tertiary: '#d6b35b', 'on-surface': '#171717', brown: '#564538' },
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'], display: ['Plus Jakarta Sans', 'sans-serif'], cursive: ['Caveat', 'cursive'] },
+                    borderRadius: { xl: '2rem', '2xl': '3rem' }
+                }
+            }
         };
     </script>
     <link rel="stylesheet" href="../../style.css?v=14">
 </head>
+
 <body id="top" class="bg-[#FEF8F2] text-[#1D1B18] antialiased">
     <header id="main-nav" class="nav-glass fixed top-0 w-full z-[110] transition-all duration-300">
         <div class="max-w-[1200px] mx-auto px-6 lg:px-8 h-[72px] flex items-center justify-between">
             <a href="../../index.html" class="text-[#8C4E2D] font-bold text-2xl tracking-tight">Gautam Dodiya</a>
             <nav class="hidden md:flex items-center gap-8 nav-links" aria-label="Main navigation">
-                <a href="../../index.html" class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Home</a>
-                <a href="../index.html" aria-current="page" class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Work</a>
-                <a href="../../systems/index.html" class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Systems</a>
-                <a href="../../approach/index.html" class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Approach</a>
-                <a href="../../about/index.html" class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">About</a>
-                <a href="../../resume/index.html" class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Resume</a>
+                <a href="../../index.html"
+                    class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Home</a>
+                <a href="../index.html" aria-current="page"
+                    class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Work</a>
+                <a href="../../systems/index.html"
+                    class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Systems</a>
+                <a href="../../approach/index.html"
+                    class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Approach</a>
+                <a href="../../about/index.html"
+                    class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">About</a>
+                <a href="../../resume/index.html"
+                    class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Resume</a>
             </nav>
             <a href="../../contact/index.html" class="hidden md:inline-flex btn-primary">Let's Talk</a>
             <div id="hamburger" class="hamburger md:hidden"><span></span><span></span><span></span></div>
         </div>
     </header>
     <div id="mobile-menu" class="mobile-menu">
-        <button id="mobile-close-btn" class="absolute top-6 right-6 p-2 text-[#53433C] hover:text-[#1D1B18] md:hidden" aria-label="Close navigation"><span class="material-symbols-outlined text-4xl">close</span></button>
-        <a href="../../index.html">Home</a><a href="../index.html">Work</a><a href="../../systems/index.html">Systems</a><a href="../../approach/index.html">Approach</a><a href="../../about/index.html">About</a><a href="../../resume/index.html">Resume</a>
+        <button id="mobile-close-btn" class="absolute top-6 right-6 p-2 text-[#53433C] hover:text-[#1D1B18] md:hidden"
+            aria-label="Close navigation"><span class="material-symbols-outlined text-4xl">close</span></button>
+        <a href="../../index.html">Home</a><a href="../index.html">Work</a><a
+            href="../../systems/index.html">Systems</a><a href="../../approach/index.html">Approach</a><a
+            href="../../about/index.html">About</a><a href="../../resume/index.html">Resume</a>
         <a href="../../contact/index.html" class="btn-primary mt-4">Let's Talk</a>
     </div>
 
     <main class="pt-24">
         <section class="relative py-16 lg:py-24 overflow-hidden">
-            <div class="absolute -top-20 right-0 w-[520px] h-[520px] bg-[#FFDBCB]/30 blur-[100px] rounded-full pointer-events-none"></div>
+            <div
+                class="absolute -top-20 right-0 w-[520px] h-[520px] bg-[#FFDBCB]/30 blur-[100px] rounded-full pointer-events-none">
+            </div>
             <div class="max-w-[1200px] mx-auto px-6 lg:px-8 relative z-10">
                 <div class="max-w-5xl scroll-reveal">
                     <div class="flex flex-wrap items-center gap-3 mb-6">
                         <span class="section-tag">SEO Case Study</span>
                         <span class="tag-chip">B2B SaaS</span><span class="tag-chip-muted">Developer Tools</span>
                     </div>
-                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.08] mb-6">Growing TestDino through <span class="font-cursive text-[#8C4E2D] font-normal">organic search</span></h1>
-                    <p class="text-lg lg:text-xl text-[#53433C] max-w-3xl leading-relaxed mb-9">I was the sole SEO owner for 12 months: building the SEO structure, planning developer-focused content, leading five writers, and coordinating technical fixes and new pages.</p>
-                    <div class="flex flex-col sm:flex-row gap-4 mb-10"><a href="#results" class="btn-primary justify-center px-8">Explore the results <span class="material-symbols-outlined text-[18px]">south</span></a><a href="../../approach/index.html" class="btn-secondary justify-center px-8">View my approach <span class="material-symbols-outlined text-[18px]">arrow_outward</span></a></div>
-                    <div class="flex flex-wrap gap-x-8 gap-y-3 text-sm text-[#53433C]"><span><strong class="text-[#1D1B18]">My role:</strong> SEO Executive</span><span>12-month engagement</span><span>Sole SEO owner</span></div>
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.08] mb-6">Growing
+                        TestDino through <span class="font-cursive text-[#8C4E2D] font-normal">organic search</span>
+                    </h1>
+                    <p class="text-lg lg:text-xl text-[#53433C] max-w-3xl leading-relaxed mb-9">I was the sole SEO owner
+                        for 12 months: building the SEO structure, planning developer-focused content, leading five
+                        writers, and coordinating technical fixes and new pages.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-10"><a href="#results"
+                            class="btn-primary justify-center px-8">Explore the results <span
+                                class="material-symbols-outlined text-[18px]">south</span></a><a
+                            href="../../approach/index.html" class="btn-secondary justify-center px-8">View my approach
+                            <span class="material-symbols-outlined text-[18px]">arrow_outward</span></a></div>
+                    <div class="flex flex-wrap gap-x-8 gap-y-3 text-sm text-[#53433C]"><span><strong
+                                class="text-[#1D1B18]">My role:</strong> SEO Executive</span><span>12-month
+                            engagement</span><span>Sole SEO owner</span></div>
                 </div>
             </div>
         </section>
 
-        <section class="py-10"><div class="max-w-[1200px] mx-auto px-6 lg:px-8"><div class="case-card bento-card-warm scroll-reveal flex flex-col md:flex-row md:items-center md:justify-between gap-6"><div><span class="section-tag">Looking for SEO support?</span><h2 class="text-xl md:text-2xl font-bold mt-4 mb-2">Need help turning search opportunities into a clear SEO plan?</h2><p class="text-sm text-[#53433C] max-w-2xl">Keyword research, content strategy, technical SEO, and content workflows—shaped around your goals.</p></div><div class="flex flex-col sm:flex-row gap-3 shrink-0"><a href="../../contact/index.html" class="btn-primary justify-center">Discuss an SEO opportunity</a><a href="../index.html" class="btn-secondary justify-center">Explore other case studies</a></div></div></div></section>        <section id="results" class="py-16 bg-[#F8F3ED]">
+        <section class="py-10">
             <div class="max-w-[1200px] mx-auto px-6 lg:px-8">
-                <div class="max-w-3xl mb-10 scroll-reveal"><span class="font-cursive text-2xl text-[#8C4E2D] block mb-2">Reported organic outcomes</span><h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Growth with a system behind it.</h2><p class="text-[#53433C]">Search Console screenshots show 21.7K clicks and 2.84M impressions in the latest six-month comparison window, versus 549 clicks and 3.7K impressions in the previous six months.</p></div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                    <article class="bento-card scroll-reveal"><span class="tag-chip mb-5">Organic clicks</span><p class="text-3xl lg:text-4xl font-bold text-[#8C4E2D] tracking-tight">21.7K</p><p class="text-sm text-[#53433C] mt-3">Latest six-month comparison window.</p></article>
-                    <article class="bento-card bento-card-dark scroll-reveal"><span class="tag-chip mb-5">Impressions</span><p class="text-4xl font-bold text-white tracking-tight">2.84M</p><p class="text-sm text-white/80 mt-3">Latest six-month comparison window.</p></article>
-                    <article class="bento-card bento-card-warm scroll-reveal"><span class="tag-chip mb-5">Average CTR</span><p class="text-4xl font-bold text-[#4D6450] tracking-tight">0.8%</p><p class="text-sm text-[#53433C] mt-3">Latest six-month comparison window.</p></article>
-                    <article class="bento-card bento-card-peach scroll-reveal"><span class="tag-chip mb-5">Average position</span><p class="text-4xl font-bold tracking-tight">6.4</p><p class="text-sm text-[#53433C] mt-3">Latest six-month comparison window.</p></article>
+                <div
+                    class="case-card bento-card-warm scroll-reveal flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                    <div><span class="section-tag">Looking for SEO support?</span>
+                        <h2 class="text-xl md:text-2xl font-bold mt-4 mb-2">Need help turning search opportunities into
+                            a clear SEO plan?</h2>
+                        <p class="text-sm text-[#53433C] max-w-2xl">Keyword research, content strategy, technical SEO,
+                            and content workflows—shaped around your goals.</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3 shrink-0"><a href="../../contact/index.html"
+                            class="btn-primary justify-center">Discuss an SEO opportunity</a><a href="../index.html"
+                            class="btn-secondary justify-center">Explore other case studies</a></div>
                 </div>
-                <div class="case-card scroll-reveal mt-6"><h3 class="text-xl font-bold mb-3">Six-month comparison</h3><p class="text-[#53433C] leading-relaxed">Current: 21.7K clicks, 2.84M impressions, 0.8% CTR, average position 6.4. Previous: 549 clicks, 3.7K impressions, 14.8% CTR, average position 7.6. These are reporting-window totals and averages, not monthly figures.</p><p class="text-xs text-[#53433C] mt-4">The results reflect several types of work together and should not be attributed to one factor alone.</p><figure class="mt-7"><img src="images/IMG-20260423-WA0013.jpg" alt="Google Search Console six-month comparison showing 21.7K clicks and 2.84M impressions versus 549 clicks and 3.7K impressions in the previous period" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-xs text-[#53433C] mt-3">Google Search Console six-month comparison. Select the image to view it full size.</figcaption></figure></div>
+            </div>
+        </section>
+        <section id="results" class="py-16 bg-[#F8F3ED]">
+            <div class="max-w-[1200px] mx-auto px-6 lg:px-8">
+                <div class="max-w-3xl mb-10 scroll-reveal"><span
+                        class="font-cursive text-2xl text-[#8C4E2D] block mb-2">Reported organic outcomes</span>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Growth with a system behind it.</h2>
+                    <p class="text-[#53433C]">Search Console screenshots show 21.7K clicks and 2.84M impressions in the
+                        latest six-month comparison window, versus 549 clicks and 3.7K impressions in the previous six
+                        months.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <article class="bento-card scroll-reveal"><span class="tag-chip mb-5">Organic clicks</span>
+                        <p class="text-3xl lg:text-4xl font-bold text-[#8C4E2D] tracking-tight">21.7K</p>
+                        <p class="text-sm text-[#53433C] mt-3">Latest six-month comparison window.</p>
+                    </article>
+                    <article class="bento-card bento-card-dark scroll-reveal"><span
+                            class="tag-chip mb-5">Impressions</span>
+                        <p class="text-4xl font-bold text-white tracking-tight">2.84M</p>
+                        <p class="text-sm text-white/80 mt-3">Latest six-month comparison window.</p>
+                    </article>
+                    <article class="bento-card bento-card-warm scroll-reveal"><span class="tag-chip mb-5">Average
+                            CTR</span>
+                        <p class="text-4xl font-bold text-[#4D6450] tracking-tight">0.8%</p>
+                        <p class="text-sm text-[#53433C] mt-3">Latest six-month comparison window.</p>
+                    </article>
+                    <article class="bento-card bento-card-peach scroll-reveal"><span class="tag-chip mb-5">Average
+                            position</span>
+                        <p class="text-4xl font-bold tracking-tight">6.4</p>
+                        <p class="text-sm text-[#53433C] mt-3">Latest six-month comparison window.</p>
+                    </article>
+                </div>
+                <div class="case-card scroll-reveal mt-6">
+                    <h3 class="text-xl font-bold mb-3">Six-month comparison</h3>
+                    <p class="text-[#53433C] leading-relaxed">Current: 21.7K clicks, 2.84M impressions, 0.8% CTR,
+                        average position 6.4. Previous: 549 clicks, 3.7K impressions, 14.8% CTR, average position 7.6.
+                        These are reporting-window totals and averages, not monthly figures.</p>
+                    <p class="text-xs text-[#53433C] mt-4">The results reflect several types of work together and should
+                        not be attributed to one factor alone.</p>
+                    <figure class="mt-7"><img src="images/IMG-20260423-WA0013.jpg"
+                            alt="Google Search Console six-month comparison showing 21.7K clicks and 2.84M impressions versus 549 clicks and 3.7K impressions in the previous period"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-xs text-[#53433C] mt-3">Google Search Console six-month comparison.
+                            Select the image to view it full size.</figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
 
         <section class="py-20 lg:py-24">
             <div class="max-w-[1200px] mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <div class="scroll-reveal"><span class="font-cursive text-2xl text-[#8C4E2D] block mb-2">The challenge</span><h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-6">Building the SEO foundation, not just publishing more content.</h2><p class="text-[#53433C] leading-relaxed mb-5">TestDino needed a structured organic search operation for a developer-focused SaaS product. The website had limited established content and lacked a mature site structure.</p><p class="text-[#53433C] leading-relaxed">The work extended beyond keyword targeting: establish site structure, identify relevant search demand, coordinate content production, maintain technical SEO, and make sure published content accurately reflected the product.</p></div>
-                <article class="bento-card bento-card-warm scroll-reveal"><h3 class="text-xl font-bold mb-6">The priorities</h3><ul class="space-y-4 text-sm text-[#53433C]"><li class="flex gap-3"><span class="material-symbols-outlined text-[#8C4E2D]">check_circle</span><span>Establish a usable site structure and content foundation.</span></li><li class="flex gap-3"><span class="material-symbols-outlined text-[#8C4E2D]">check_circle</span><span>Find relevant search topics with demonstrable demand.</span></li><li class="flex gap-3"><span class="material-symbols-outlined text-[#8C4E2D]">check_circle</span><span>Coordinate five content writers through a consistent editorial process.</span></li><li class="flex gap-3"><span class="material-symbols-outlined text-[#8C4E2D]">check_circle</span><span>Maintain technical SEO with the web developer.</span></li><li class="flex gap-3"><span class="material-symbols-outlined text-[#8C4E2D]">check_circle</span><span>Improve production efficiency without leaving factual accuracy behind.</span></li></ul></article>
+                <div class="scroll-reveal"><span class="font-cursive text-2xl text-[#8C4E2D] block mb-2">The
+                        challenge</span>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-6">Building the SEO foundation, not just
+                        publishing more content.</h2>
+                    <p class="text-[#53433C] leading-relaxed mb-5">TestDino needed a structured organic search operation
+                        for a developer-focused SaaS product. The website had limited established content and lacked a
+                        mature site structure.</p>
+                    <p class="text-[#53433C] leading-relaxed">The work extended beyond keyword targeting: establish site
+                        structure, identify relevant search demand, coordinate content production, maintain technical
+                        SEO, and make sure published content accurately reflected the product.</p>
+                </div>
+                <article class="bento-card bento-card-warm scroll-reveal">
+                    <h3 class="text-xl font-bold mb-6">The priorities</h3>
+                    <ul class="space-y-4 text-sm text-[#53433C]">
+                        <li class="flex gap-3"><span
+                                class="material-symbols-outlined text-[#8C4E2D]">check_circle</span><span>Establish a
+                                usable site structure and content foundation.</span></li>
+                        <li class="flex gap-3"><span
+                                class="material-symbols-outlined text-[#8C4E2D]">check_circle</span><span>Find relevant
+                                search topics with demonstrable demand.</span></li>
+                        <li class="flex gap-3"><span
+                                class="material-symbols-outlined text-[#8C4E2D]">check_circle</span><span>Coordinate
+                                five content writers through a consistent editorial process.</span></li>
+                        <li class="flex gap-3"><span
+                                class="material-symbols-outlined text-[#8C4E2D]">check_circle</span><span>Maintain
+                                technical SEO with the web developer.</span></li>
+                        <li class="flex gap-3"><span
+                                class="material-symbols-outlined text-[#8C4E2D]">check_circle</span><span>Improve
+                                production efficiency without leaving factual accuracy behind.</span></li>
+                    </ul>
+                </article>
             </div>
         </section>
 
         <section class="py-20 bg-[#F8F3ED]">
             <div class="max-w-[1200px] mx-auto px-6 lg:px-8">
-                <div class="max-w-3xl mb-12 scroll-reveal"><span class="section-tag">Strategy</span><h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-5 mb-4">Four connected parts of the work.</h2><p class="text-[#53433C]">A demand-led plan, a workable site, a coordinated editorial operation, and continuous improvement.</p></div>
+                <div class="max-w-3xl mb-12 scroll-reveal"><span class="section-tag">Strategy</span>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-5 mb-4">Four connected parts of the
+                        work.</h2>
+                    <p class="text-[#53433C]">A demand-led plan, a workable site, a coordinated editorial operation, and
+                        continuous improvement.</p>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <article class="bento-card scroll-reveal"><span class="tag-chip">01 / Demand</span><h3 class="text-xl font-bold mt-5 mb-3">Demand-led keyword strategy</h3><p class="text-sm text-[#53433C] leading-relaxed">Research keywords and topics based on search volume and demand. Submit topic lists for CEO approval before turning them into briefs, keeping the content plan aligned with business priorities.</p></article>
-                    <article class="bento-card bento-card-peach scroll-reveal"><span class="tag-chip">02 / Foundations</span><h3 class="text-xl font-bold mt-5 mb-3">Site structure &amp; technical SEO</h3><p class="text-sm text-[#53433C] leading-relaxed">Build the site's structure and work with the web developer on technical fixes and new functionality. Address issues as they are identified by the SEO owner or other team members.</p></article>
-                    <article class="bento-card bento-card-muted scroll-reveal"><span class="tag-chip">03 / Editorial</span><h3 class="text-xl font-bold mt-5 mb-3">Editorial operations</h3><p class="text-sm text-[#53433C] leading-relaxed">Give writers briefs and outlines before drafting. Coordinate reviews, resolve content questions, and keep production aligned with the product and company goals.</p></article>
-                    <article class="bento-card bento-card-dark scroll-reveal"><span class="tag-chip">04 / Iteration</span><h3 class="text-xl font-bold text-white mt-5 mb-3">Continuous optimization</h3><p class="text-sm text-white/80 leading-relaxed">Use available capacity to revisit underperforming content while coordinating technical improvements, content refreshes, and backlink-building activity.</p></article>
+                    <article class="bento-card scroll-reveal"><span class="tag-chip">01 / Demand</span>
+                        <h3 class="text-xl font-bold mt-5 mb-3">Demand-led keyword strategy</h3>
+                        <p class="text-sm text-[#53433C] leading-relaxed">Research keywords and topics based on search
+                            volume and demand. Submit topic lists for CEO approval before turning them into briefs,
+                            keeping the content plan aligned with business priorities.</p>
+                    </article>
+                    <article class="bento-card bento-card-peach scroll-reveal"><span class="tag-chip">02 /
+                            Foundations</span>
+                        <h3 class="text-xl font-bold mt-5 mb-3">Site structure &amp; technical SEO</h3>
+                        <p class="text-sm text-[#53433C] leading-relaxed">Build the site's structure and work with the
+                            web developer on technical fixes and new functionality. Address issues as they are
+                            identified by the SEO owner or other team members.</p>
+                    </article>
+                    <article class="bento-card bento-card-muted scroll-reveal"><span class="tag-chip">03 /
+                            Editorial</span>
+                        <h3 class="text-xl font-bold mt-5 mb-3">Editorial operations</h3>
+                        <p class="text-sm text-[#53433C] leading-relaxed">Give writers briefs and outlines before
+                            drafting. Coordinate reviews, resolve content questions, and keep production aligned with
+                            the product and company goals.</p>
+                    </article>
+                    <article class="bento-card bento-card-dark scroll-reveal"><span class="tag-chip">04 /
+                            Iteration</span>
+                        <h3 class="text-xl font-bold text-white mt-5 mb-3">Continuous optimization</h3>
+                        <p class="text-sm text-white/80 leading-relaxed">Use available capacity to revisit
+                            underperforming content while coordinating technical improvements, content refreshes, and
+                            backlink-building activity.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
         <section class="py-20 lg:py-24">
             <div class="max-w-[1200px] mx-auto px-6 lg:px-8">
-                <div class="max-w-3xl mb-12 scroll-reveal"><span class="font-cursive text-2xl text-[#8C4E2D] block mb-2">Editorial operations</span><h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">A repeatable workflow from keyword to publication.</h2><p class="text-[#53433C]">Each article moved through a defined sequence of research, production, verification and approval.</p></div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                    <article class="bento-card scroll-reveal"><span class="tag-chip">01</span><h3 class="text-lg font-bold mt-4 mb-2">Research</h3><p class="text-sm text-[#53433C]">Identify keywords and topics with search demand.</p></article>
-                    <article class="bento-card bento-card-warm scroll-reveal"><span class="tag-chip">02</span><h3 class="text-lg font-bold mt-4 mb-2">Approve</h3><p class="text-sm text-[#53433C]">Submit the topic list to the CEO for approval.</p></article>
-                    <article class="bento-card bento-card-muted scroll-reveal"><span class="tag-chip">03</span><h3 class="text-lg font-bold mt-4 mb-2">Brief</h3><p class="text-sm text-[#53433C]">Give writers a topic-specific outline.</p></article>
-                    <article class="bento-card bento-card-peach scroll-reveal"><span class="tag-chip">04</span><h3 class="text-lg font-bold mt-4 mb-2">Draft</h3><p class="text-sm text-[#53433C]">Use product documentation and authoritative primary sources.</p></article>
-                    <article class="bento-card bento-card-dark scroll-reveal"><span class="tag-chip">05</span><h3 class="text-lg font-bold text-white mt-4 mb-2">Self-check</h3><p class="text-sm text-white/80">Writers verify facts and review their drafts.</p></article>
-                    <article class="bento-card scroll-reveal"><span class="tag-chip">06</span><h3 class="text-lg font-bold mt-4 mb-2">SEO review</h3><p class="text-sm text-[#53433C]">Check accuracy, SEO, errors, product fit and company goals.</p></article>
-                    <article class="bento-card bento-card-warm scroll-reveal"><span class="tag-chip">07</span><h3 class="text-lg font-bold mt-4 mb-2">Final approval</h3><p class="text-sm text-[#53433C]">Obtain CEO sign-off.</p></article>
-                    <article class="bento-card bento-card-muted scroll-reveal"><span class="tag-chip">08</span><h3 class="text-lg font-bold mt-4 mb-2">Publish</h3><p class="text-sm text-[#53433C]">Coordinate visuals with the Figma designer and publish approved content.</p></article>
+                <div class="max-w-3xl mb-12 scroll-reveal"><span
+                        class="font-cursive text-2xl text-[#8C4E2D] block mb-2">Editorial operations</span>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">A repeatable workflow from keyword to
+                        publication.</h2>
+                    <p class="text-[#53433C]">Each article moved through a defined sequence of research, production,
+                        verification and approval.</p>
                 </div>
-                <article class="bento-card bento-card-dark mt-8 scroll-reveal"><div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"><div><span class="font-cursive text-2xl text-[#FFDBCB]">Quality control</span><h3 class="text-2xl font-bold text-white mt-2 mb-3">Accuracy before output.</h3><p class="text-sm text-white/80 leading-relaxed">Product documentation and authoritative primary sources formed the content sourcing standard. Articles passed through writer self-review, SEO review, and CEO approval.</p></div><div class="flex flex-wrap gap-3"><span class="tag-chip">Primary-source research</span><span class="tag-chip">Writer self-check</span><span class="tag-chip">SEO review</span><span class="tag-chip">CEO sign-off</span></div></div></article>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <article class="bento-card scroll-reveal"><span class="tag-chip">01</span>
+                        <h3 class="text-lg font-bold mt-4 mb-2">Research</h3>
+                        <p class="text-sm text-[#53433C]">Identify keywords and topics with search demand.</p>
+                    </article>
+                    <article class="bento-card bento-card-warm scroll-reveal"><span class="tag-chip">02</span>
+                        <h3 class="text-lg font-bold mt-4 mb-2">Approve</h3>
+                        <p class="text-sm text-[#53433C]">Submit the topic list to the CEO for approval.</p>
+                    </article>
+                    <article class="bento-card bento-card-muted scroll-reveal"><span class="tag-chip">03</span>
+                        <h3 class="text-lg font-bold mt-4 mb-2">Brief</h3>
+                        <p class="text-sm text-[#53433C]">Give writers a topic-specific outline.</p>
+                    </article>
+                    <article class="bento-card bento-card-peach scroll-reveal"><span class="tag-chip">04</span>
+                        <h3 class="text-lg font-bold mt-4 mb-2">Draft</h3>
+                        <p class="text-sm text-[#53433C]">Use product documentation and authoritative primary sources.
+                        </p>
+                    </article>
+                    <article class="bento-card bento-card-dark scroll-reveal"><span class="tag-chip">05</span>
+                        <h3 class="text-lg font-bold text-white mt-4 mb-2">Self-check</h3>
+                        <p class="text-sm text-white/80">Writers verify facts and review their drafts.</p>
+                    </article>
+                    <article class="bento-card scroll-reveal"><span class="tag-chip">06</span>
+                        <h3 class="text-lg font-bold mt-4 mb-2">SEO review</h3>
+                        <p class="text-sm text-[#53433C]">Check accuracy, SEO, errors, product fit and company goals.
+                        </p>
+                    </article>
+                    <article class="bento-card bento-card-warm scroll-reveal"><span class="tag-chip">07</span>
+                        <h3 class="text-lg font-bold mt-4 mb-2">Final approval</h3>
+                        <p class="text-sm text-[#53433C]">Obtain CEO sign-off.</p>
+                    </article>
+                    <article class="bento-card bento-card-muted scroll-reveal"><span class="tag-chip">08</span>
+                        <h3 class="text-lg font-bold mt-4 mb-2">Publish</h3>
+                        <p class="text-sm text-[#53433C]">Coordinate visuals with the Figma designer and publish
+                            approved content.</p>
+                    </article>
+                </div>
+                <article class="bento-card bento-card-dark mt-8 scroll-reveal">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div><span class="font-cursive text-2xl text-[#FFDBCB]">Quality control</span>
+                            <h3 class="text-2xl font-bold text-white mt-2 mb-3">Accuracy before output.</h3>
+                            <p class="text-sm text-white/80 leading-relaxed">Product documentation and authoritative
+                                primary sources formed the content sourcing standard. Articles passed through writer
+                                self-review, SEO review, and CEO approval.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-3"><span class="tag-chip">Primary-source research</span><span
+                                class="tag-chip">Writer self-check</span><span class="tag-chip">SEO review</span><span
+                                class="tag-chip">CEO sign-off</span></div>
+                    </div>
+                </article>
             </div>
         </section>
 
         <section class="py-20 bg-[#F8F3ED]">
             <div class="max-w-[1200px] mx-auto px-6 lg:px-8">
-                <div class="max-w-3xl mb-12 scroll-reveal"><div class="flex items-center gap-2 mb-4"><span class="material-symbols-outlined text-[#8C4E2D] text-sm">architecture</span><span class="section-tag">Systems built</span></div><h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Operational contributions, built to repeat.</h2><p class="text-[#53433C]">Two systems helped make the editorial work more visible and repeatable.</p></div>
+                <div class="max-w-3xl mb-12 scroll-reveal">
+                    <div class="flex items-center gap-2 mb-4"><span
+                            class="material-symbols-outlined text-[#8C4E2D] text-sm">architecture</span><span
+                            class="section-tag">Systems built</span></div>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Operational contributions, built to
+                        repeat.</h2>
+                    <p class="text-[#53433C]">Two systems helped make the editorial work more visible and repeatable.
+                    </p>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <article class="bento-card scroll-reveal"><div class="w-12 h-12 rounded-full bg-[#F4A47C]/20 flex items-center justify-center mb-6"><span class="material-symbols-outlined text-[#8C4E2D]">dashboard_customize</span></div><span class="tag-chip">Editorial workflow</span><h3 class="text-2xl font-bold mt-5 mb-4">Content operations dashboard</h3><p class="text-[#53433C] leading-relaxed mb-6">Replaced a manually maintained spreadsheet with a central dashboard where writers could log work, track content status, and download data.</p><div class="border-t border-[#E7E2DC] pt-5"><span class="text-xs font-bold tracking-widest uppercase text-[#8C4E2D]">Purpose</span><p class="text-sm text-[#53433C] mt-2">Improve visibility into the editorial pipeline and reduce manual tracking.</p></div></article>
-                    <article class="bento-card bento-card-warm scroll-reveal"><div class="w-12 h-12 rounded-full bg-[#C7E1C8]/40 flex items-center justify-center mb-6"><span class="material-symbols-outlined text-[#4D6450]">psychology</span></div><span class="tag-chip">AI-assisted workflow</span><h3 class="text-2xl font-bold mt-5 mb-4">Claude SEO skill</h3><p class="text-[#53433C] leading-relaxed mb-6">Created a Claude-based workflow for drafting new content and optimizing existing pages.</p><div class="border-t border-[#E7E2DC] pt-5"><span class="text-xs font-bold tracking-widest uppercase text-[#8C4E2D]">Purpose</span><p class="text-sm text-[#53433C] mt-2">Standardize recurring SEO work and increase production capacity.</p></div></article>
+                    <article class="bento-card scroll-reveal">
+                        <div class="w-12 h-12 rounded-full bg-[#F4A47C]/20 flex items-center justify-center mb-6"><span
+                                class="material-symbols-outlined text-[#8C4E2D]">dashboard_customize</span></div><span
+                            class="tag-chip">Editorial workflow</span>
+                        <h3 class="text-2xl font-bold mt-5 mb-4">Content operations dashboard</h3>
+                        <p class="text-[#53433C] leading-relaxed mb-6">Replaced a manually maintained spreadsheet with a
+                            central dashboard where writers could log work, track content status, and download data.</p>
+                        <div class="border-t border-[#E7E2DC] pt-5"><span
+                                class="text-xs font-bold tracking-widest uppercase text-[#8C4E2D]">Purpose</span>
+                            <p class="text-sm text-[#53433C] mt-2">Improve visibility into the editorial pipeline and
+                                reduce manual tracking.</p>
+                        </div>
+                    </article>
+                    <article class="bento-card bento-card-warm scroll-reveal">
+                        <div class="w-12 h-12 rounded-full bg-[#C7E1C8]/40 flex items-center justify-center mb-6"><span
+                                class="material-symbols-outlined text-[#4D6450]">psychology</span></div><span
+                            class="tag-chip">AI-assisted workflow</span>
+                        <h3 class="text-2xl font-bold mt-5 mb-4">Claude SEO skill</h3>
+                        <p class="text-[#53433C] leading-relaxed mb-6">Created a Claude-based workflow for drafting new
+                            content and optimizing existing pages.</p>
+                        <div class="border-t border-[#E7E2DC] pt-5"><span
+                                class="text-xs font-bold tracking-widest uppercase text-[#8C4E2D]">Purpose</span>
+                            <p class="text-sm text-[#53433C] mt-2">Standardize recurring SEO work and increase
+                                production capacity.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -126,90 +339,293 @@
             <div class="max-w-[1200px] mx-auto px-6 lg:px-8">
                 <div class="case-card bg-[#8C4E2D] text-white scroll-reveal">
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-                        <div><span class="font-cursive text-2xl text-[#FFDBCB]">Content production after workflow automation</span><h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-4 mb-5">More capacity for meaningful optimization.</h2><p class="text-white/80 leading-relaxed">Reported production moved from 0.5–1 blog per writer per day to about 2 blogs per writer per day. The additional capacity was used to refresh underperforming blogs.</p></div>
-                        <div class="grid grid-cols-2 gap-5"><div class="bg-white/10 rounded-[32px] p-7"><span class="text-xs uppercase tracking-widest text-[#FFDBCB]">Before the skill</span><p class="text-4xl md:text-5xl font-bold mt-4">0.5–1</p><p class="text-sm text-white/80 mt-2">blog per writer, per day</p></div><div class="bg-[#FFB692] text-[#1D1B18] rounded-[32px] p-7"><span class="text-xs uppercase tracking-widest text-[#713819]">After the skill</span><p class="text-4xl md:text-5xl font-bold mt-4">2</p><p class="text-sm text-[#53433C] mt-2">blogs per writer, per day</p></div></div>
+                        <div><span class="font-cursive text-2xl text-[#FFDBCB]">Content production after workflow
+                                automation</span>
+                            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-4 mb-5">More capacity for
+                                meaningful optimization.</h2>
+                            <p class="text-white/80 leading-relaxed">Reported production moved from 0.5–1 blog per
+                                writer per day to about 2 blogs per writer per day. The additional capacity was used to
+                                refresh underperforming blogs.</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="bg-white/10 rounded-[32px] p-7"><span
+                                    class="text-xs uppercase tracking-widest text-[#FFDBCB]">Before the skill</span>
+                                <p class="text-4xl md:text-5xl font-bold mt-4">0.5–1</p>
+                                <p class="text-sm text-white/80 mt-2">blog per writer, per day</p>
+                            </div>
+                            <div class="bg-[#FFB692] text-[#1D1B18] rounded-[32px] p-7"><span
+                                    class="text-xs uppercase tracking-widest text-[#713819]">After the skill</span>
+                                <p class="text-4xl md:text-5xl font-bold mt-4">2</p>
+                                <p class="text-sm text-[#53433C] mt-2">blogs per writer, per day</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <p class="text-xs text-[#53433C] mt-4">Production figures are reported from the project workflow; the exact measurement period was not specified.</p>
             </div>
         </section>
 
         <section class="py-20 bg-[#F8F3ED]">
             <div class="max-w-[1200px] mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="scroll-reveal"><span class="font-cursive text-2xl text-[#8C4E2D] block mb-2">Content gap analysis</span><h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-5">Finding gaps in practitioner-level content.</h2><p class="text-[#53433C] leading-relaxed">An analysis against 14 competitors identified topics that needed stronger coverage for developers working with Playwright. The analysis established the strategic priority; implementation timeline and ranking or traffic impact remain to be verified.</p></div>
-                <article class="bento-card scroll-reveal"><span class="tag-chip mb-5">Priority topics identified</span><div class="flex flex-wrap gap-3"><span class="tag-chip-muted">Page Object Model (POM)</span><span class="tag-chip-muted">Fixtures</span><span class="tag-chip-muted">playwright.config.ts</span><span class="tag-chip-muted">GitHub Actions CI</span><span class="tag-chip-muted">Storage state</span></div></article>
+                <div class="scroll-reveal"><span class="font-cursive text-2xl text-[#8C4E2D] block mb-2">Content gap
+                        analysis</span>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-5">Finding gaps in practitioner-level
+                        content.</h2>
+                    <p class="text-[#53433C] leading-relaxed">An analysis against 14 competitors identified topics that
+                        needed stronger coverage for developers working with Playwright. The analysis established the
+                        strategic priority; implementation timeline and ranking or traffic impact remain to be verified.
+                    </p>
+                </div>
+                <article class="bento-card scroll-reveal"><span class="tag-chip mb-5">Priority topics identified</span>
+                    <div class="flex flex-wrap gap-3"><span class="tag-chip-muted">Page Object Model (POM)</span><span
+                            class="tag-chip-muted">Fixtures</span><span
+                            class="tag-chip-muted">playwright.config.ts</span><span class="tag-chip-muted">GitHub
+                            Actions CI</span><span class="tag-chip-muted">Storage state</span></div>
+                </article>
             </div>
         </section>
 
         <section class="py-20 lg:py-24">
             <div class="max-w-[1200px] mx-auto px-6 lg:px-8">
-                <div class="max-w-3xl mb-12 scroll-reveal"><span class="section-tag">Cross-functional leadership</span><h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-5 mb-4">One SEO owner. A coordinated content operation.</h2><p class="text-[#53433C]">As the sole SEO owner, I led five content writers and coordinated the functions involved in taking content from research to publication and ongoing optimization.</p></div>
+                <div class="max-w-3xl mb-12 scroll-reveal"><span class="section-tag">Cross-functional leadership</span>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-5 mb-4">One SEO owner. A coordinated
+                        content operation.</h2>
+                    <p class="text-[#53433C]">As the sole SEO owner, I led five content writers and coordinated the
+                        functions involved in taking content from research to publication and ongoing optimization.</p>
+                </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                    <article class="bento-card"><h3 class="text-lg font-bold mb-2">SEO &amp; content</h3><p class="text-sm text-[#53433C]">Keyword strategy, briefs, reviews and writer support.</p></article>
-                    <article class="bento-card bento-card-warm"><h3 class="text-lg font-bold mb-2">Web development</h3><p class="text-sm text-[#53433C]">Technical SEO fixes and site functionality.</p></article>
-                    <article class="bento-card bento-card-muted"><h3 class="text-lg font-bold mb-2">Figma design</h3><p class="text-sm text-[#53433C]">Blog and social visuals.</p></article>
-                    <article class="bento-card bento-card-peach"><h3 class="text-lg font-bold mb-2">Social media</h3><p class="text-sm text-[#53433C]">Alignment with company and social content goals.</p></article>
-                    <article class="bento-card bento-card-dark"><h3 class="text-lg font-bold text-white mb-2">Backlink building</h3><p class="text-sm text-white/80">Prospect and target follow-up.</p></article>
-                    <article class="bento-card"><h3 class="text-lg font-bold mb-2">CEO</h3><p class="text-sm text-[#53433C]">Topic approval and two-month goal planning.</p></article>
+                    <article class="bento-card">
+                        <h3 class="text-lg font-bold mb-2">SEO &amp; content</h3>
+                        <p class="text-sm text-[#53433C]">Keyword strategy, briefs, reviews and writer support.</p>
+                    </article>
+                    <article class="bento-card bento-card-warm">
+                        <h3 class="text-lg font-bold mb-2">Web development</h3>
+                        <p class="text-sm text-[#53433C]">Technical SEO fixes and site functionality.</p>
+                    </article>
+                    <article class="bento-card bento-card-muted">
+                        <h3 class="text-lg font-bold mb-2">Figma design</h3>
+                        <p class="text-sm text-[#53433C]">Blog and social visuals.</p>
+                    </article>
+                    <article class="bento-card bento-card-peach">
+                        <h3 class="text-lg font-bold mb-2">Social media</h3>
+                        <p class="text-sm text-[#53433C]">Alignment with company and social content goals.</p>
+                    </article>
+                    <article class="bento-card bento-card-dark">
+                        <h3 class="text-lg font-bold text-white mb-2">Backlink building</h3>
+                        <p class="text-sm text-white/80">Prospect and target follow-up.</p>
+                    </article>
+                    <article class="bento-card">
+                        <h3 class="text-lg font-bold mb-2">CEO</h3>
+                        <p class="text-sm text-[#53433C]">Topic approval and two-month goal planning.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
         <section class="py-20 bg-[#F8F3ED]" id="search-console-evidence">
             <div class="max-w-[1200px] mx-auto px-6 lg:px-8">
-                <div class="max-w-3xl mb-10 scroll-reveal"><span class="section-tag">Search Console evidence</span><h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-5 mb-4">A closer look at the reporting snapshots.</h2><p class="text-[#53433C]">Each image is shown with its reporting window. Tap any screenshot to view it full size. Comparison windows and Insights snapshots are presented separately.</p></div>
+                <div class="max-w-3xl mb-10 scroll-reveal"><span class="section-tag">Search Console evidence</span>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-5 mb-4">A closer look at the reporting
+                        snapshots.</h2>
+                    <p class="text-[#53433C]">Each image is shown with its reporting window. Tap any screenshot to view
+                        it full size. Comparison windows and Insights snapshots are presented separately.</p>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0013.jpg" alt="Google Search Console six-month comparison: 21.7 thousand clicks and 2.84 million impressions versus the previous period" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">Six-month comparison: 21.7K clicks and 2.84M impressions versus 549 clicks and 3.7K impressions in the previous six months.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0017.jpg" alt="Google Search Console last three months compared with the previous three months" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">Three-month comparison: 19.1K clicks and 2.59M impressions versus 2.67K clicks and 252K impressions.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0016.jpg" alt="Google Search Console detailed three-month performance view" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">Three-month Search Console performance detail: 19.1K clicks, 2.59M impressions, 0.7% CTR, average position 6.2.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0009.jpg" alt="Google Search Console last 28 days performance chart" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">28-day performance view: 7.94K clicks, 1.11M impressions, 0.7% CTR, average position 6.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0008.jpg" alt="Google Search Console seven-day performance chart" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">Seven-day performance view: 1.82K clicks, 266K impressions, 0.7% CTR, average position 6.4.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0007.jpg" alt="Google Search Console hourly performance over the last 24 hours" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">24-hour hourly performance snapshot.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0004.jpg" alt="Google Search Console Insights overview for the last three months" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">Three-month Search Console Insights: content, queries, countries, and traffic sources.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0015.jpg" alt="Google Search Console Insights trending up for the last three months" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">Three-month Insights snapshot: trending content and queries.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0002.jpg" alt="Google Search Console Insights trending down for the last three months" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">Three-month Insights snapshot: content trending down and queries.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0011.jpg" alt="Google Search Console Insights overview for the last 28 days" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">28-day Search Console Insights: 7.94K clicks and 1.11M impressions, with top content and queries.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0006.jpg" alt="Google Search Console Insights trending up over the last 28 days" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">28-day Insights snapshot: content trending up and queries.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0000.jpg" alt="Google Search Console Insights trending down over the last 28 days" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">28-day Insights snapshot: content trending down and queries.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0001.jpg" alt="Google Search Console Insights top results for the last seven days" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">Seven-day Insights snapshot: top content and queries.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0014.jpg" alt="Google Search Console Insights trending up over the last seven days" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">Seven-day Insights snapshot: trending up content and queries.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0012.jpg" alt="Google Search Console Insights trending down over the last seven days" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">Seven-day Insights snapshot: trending down content and queries.</figcaption></figure>
-                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0003.jpg" alt="Google Search Console external links report showing 1,303 total external links" class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in"><figcaption class="text-sm text-[#53433C] mt-3 px-2">Search Console links report snapshot: 1,303 total external links at the time shown. This is not presented as links acquired during this project.</figcaption></figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0013.jpg"
+                            alt="Google Search Console six-month comparison: 21.7 thousand clicks and 2.84 million impressions versus the previous period"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">Six-month comparison: 21.7K clicks and
+                            2.84M impressions versus 549 clicks and 3.7K impressions in the previous six months.
+                        </figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0017.jpg"
+                            alt="Google Search Console last three months compared with the previous three months"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">Three-month comparison: 19.1K clicks and
+                            2.59M impressions versus 2.67K clicks and 252K impressions.</figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0016.jpg"
+                            alt="Google Search Console detailed three-month performance view"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">Three-month Search Console performance
+                            detail: 19.1K clicks, 2.59M impressions, 0.7% CTR, average position 6.2.</figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0009.jpg"
+                            alt="Google Search Console last 28 days performance chart"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">28-day performance view: 7.94K clicks,
+                            1.11M impressions, 0.7% CTR, average position 6.</figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0008.jpg"
+                            alt="Google Search Console seven-day performance chart"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">Seven-day performance view: 1.82K clicks,
+                            266K impressions, 0.7% CTR, average position 6.4.</figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0007.jpg"
+                            alt="Google Search Console hourly performance over the last 24 hours"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">24-hour hourly performance snapshot.
+                        </figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0004.jpg"
+                            alt="Google Search Console Insights overview for the last three months"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">Three-month Search Console Insights:
+                            content, queries, countries, and traffic sources.</figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0015.jpg"
+                            alt="Google Search Console Insights trending up for the last three months"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">Three-month Insights snapshot: trending
+                            content and queries.</figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0002.jpg"
+                            alt="Google Search Console Insights trending down for the last three months"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">Three-month Insights snapshot: content
+                            trending down and queries.</figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0011.jpg"
+                            alt="Google Search Console Insights overview for the last 28 days"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">28-day Search Console Insights: 7.94K
+                            clicks and 1.11M impressions, with top content and queries.</figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0006.jpg"
+                            alt="Google Search Console Insights trending up over the last 28 days"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">28-day Insights snapshot: content trending
+                            up and queries.</figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0000.jpg"
+                            alt="Google Search Console Insights trending down over the last 28 days"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">28-day Insights snapshot: content trending
+                            down and queries.</figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0001.jpg"
+                            alt="Google Search Console Insights top results for the last seven days"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">Seven-day Insights snapshot: top content
+                            and queries.</figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0014.jpg"
+                            alt="Google Search Console Insights trending up over the last seven days"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">Seven-day Insights snapshot: trending up
+                            content and queries.</figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0012.jpg"
+                            alt="Google Search Console Insights trending down over the last seven days"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">Seven-day Insights snapshot: trending down
+                            content and queries.</figcaption>
+                    </figure>
+                    <figure class="case-card !p-3 scroll-reveal"><img src="images/IMG-20260423-WA0003.jpg"
+                            alt="Google Search Console external links report showing 1,303 total external links"
+                            class="w-full h-auto rounded-2xl lightbox-trigger cursor-zoom-in">
+                        <figcaption class="text-sm text-[#53433C] mt-3 px-2">Search Console links report snapshot: 1,303
+                            total external links at the time shown. This is not presented as links acquired during this
+                            project.</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
 
         <section class="py-20 bg-[#F8F3ED]">
             <div class="max-w-[1200px] mx-auto px-6 lg:px-8">
-                <div class="max-w-3xl mb-10 scroll-reveal"><span class="font-cursive text-2xl text-[#8C4E2D] block mb-2">Next iteration</span><h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">What I'd strengthen in the next iteration.</h2><p class="text-[#53433C]">These are proposed improvements to measurement and documentation, not claims that the activities were absent from the original project.</p></div>
+                <div class="max-w-3xl mb-10 scroll-reveal"><span
+                        class="font-cursive text-2xl text-[#8C4E2D] block mb-2">Next iteration</span>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">What I'd strengthen in the next
+                        iteration.</h2>
+                    <p class="text-[#53433C]">These are proposed improvements to measurement and documentation, not
+                        claims that the activities were absent from the original project.</p>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <article class="bento-card"><h3 class="text-lg font-bold mb-2">Measure growth milestones</h3><p class="text-sm text-[#53433C]">Document quarterly clicks and impressions alongside the strategy changes made at each stage.</p></article>
-                    <article class="bento-card bento-card-warm"><h3 class="text-lg font-bold mb-2">Track refresh outcomes</h3><p class="text-sm text-[#53433C]">Record before-and-after performance for pages optimized using the additional production capacity.</p></article>
-                    <article class="bento-card bento-card-muted"><h3 class="text-lg font-bold mb-2">Measure operational impact</h3><p class="text-sm text-[#53433C]">Track dashboard adoption, time spent on manual reporting, and article output by month.</p></article>
-                    <article class="bento-card bento-card-peach"><h3 class="text-lg font-bold mb-2">Connect gaps to results</h3><p class="text-sm text-[#53433C]">Measure how pages targeting the identified practitioner topics perform after publication or optimization.</p></article>
+                    <article class="bento-card">
+                        <h3 class="text-lg font-bold mb-2">Measure growth milestones</h3>
+                        <p class="text-sm text-[#53433C]">Document quarterly clicks and impressions alongside the
+                            strategy changes made at each stage.</p>
+                    </article>
+                    <article class="bento-card bento-card-warm">
+                        <h3 class="text-lg font-bold mb-2">Track refresh outcomes</h3>
+                        <p class="text-sm text-[#53433C]">Record before-and-after performance for pages optimized using
+                            the additional production capacity.</p>
+                    </article>
+                    <article class="bento-card bento-card-muted">
+                        <h3 class="text-lg font-bold mb-2">Measure operational impact</h3>
+                        <p class="text-sm text-[#53433C]">Track dashboard adoption, time spent on manual reporting, and
+                            article output by month.</p>
+                    </article>
+                    <article class="bento-card bento-card-peach">
+                        <h3 class="text-lg font-bold mb-2">Connect gaps to results</h3>
+                        <p class="text-sm text-[#53433C]">Measure how pages targeting the identified practitioner topics
+                            perform after publication or optimization.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
         <section class="cta-section py-20 px-4 md:px-8">
             <div class="max-w-[1200px] mx-auto cta-card text-center relative overflow-hidden scroll-reveal">
-                <div class="absolute top-10 right-10 opacity-50 rotate-[20deg] hidden md:block"><span class="font-cursive text-xl text-[#8C4E2D]">The takeaway</span></div>
-                <div class="w-16 h-16 mx-auto bg-[#F4A47C]/20 rounded-full flex items-center justify-center mb-8"><span class="material-symbols-outlined text-[#8C4E2D] text-3xl">insights</span></div>
-                <h2 class="text-3xl md:text-5xl font-bold mb-6">SEO growth needs <span class="font-cursive text-[#D6B35B] font-normal italic">more than keywords.</span></h2>
-                <p class="text-lg text-[#53433C] max-w-3xl mx-auto mb-10">The TestDino project combined demand-led content planning, technical SEO coordination, editorial quality control, and repeatable production workflows to support organic search growth.</p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4"><a href="../index.html" class="btn-secondary justify-center"><span class="material-symbols-outlined text-[18px]">arrow_back</span>Back to all work</a><a href="../../contact/index.html" class="btn-primary justify-center"><span class="material-symbols-outlined text-[18px]">mail</span>Get in touch</a></div>
+                <div class="absolute top-10 right-10 opacity-50 rotate-[20deg] hidden md:block"><span
+                        class="font-cursive text-xl text-[#8C4E2D]">The takeaway</span></div>
+                <div class="w-16 h-16 mx-auto bg-[#F4A47C]/20 rounded-full flex items-center justify-center mb-8"><span
+                        class="material-symbols-outlined text-[#8C4E2D] text-3xl">insights</span></div>
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">SEO growth needs <span
+                        class="font-cursive text-[#D6B35B] font-normal italic">more than keywords.</span></h2>
+                <p class="text-lg text-[#53433C] max-w-3xl mx-auto mb-10">The TestDino project combined demand-led
+                    content planning, technical SEO coordination, editorial quality control, and repeatable production
+                    workflows to support organic search growth.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4"><a href="../index.html"
+                        class="btn-secondary justify-center"><span
+                            class="material-symbols-outlined text-[18px]">arrow_back</span>Back to all work</a><a
+                        href="../../contact/index.html" class="btn-primary justify-center"><span
+                            class="material-symbols-outlined text-[18px]">mail</span>Get in touch</a></div>
             </div>
         </section>
-        <section class="pt-16 pb-16"><div class="max-w-[1200px] mx-auto px-6 lg:px-8"><nav aria-label="Project navigation" class="grid grid-cols-1 sm:grid-cols-3 gap-4"><a href="../index.html" class="btn-secondary text-center">← All Work</a><a href="../ask4lead/index.html" class="bento-card bento-card-muted text-sm font-semibold">← Previous: Ask4Lead</a><a href="../alvix-insurance/index.html" class="bento-card bento-card-warm text-sm font-semibold">Next: Alvix Insurance →</a></nav></div></section>
+        <section class="pt-16 pb-16">
+            <div class="max-w-[1200px] mx-auto px-6 lg:px-8">
+                <nav aria-label="Project navigation" class="grid grid-cols-1 sm:grid-cols-3 gap-4"><a
+                        href="../index.html" class="btn-secondary text-center">← All Work</a><a
+                        href="../ask4lead/index.html" class="bento-card bento-card-muted text-sm font-semibold">←
+                        Previous: Ask4Lead</a><a href="../alvix-insurance/index.html"
+                        class="bento-card bento-card-warm text-sm font-semibold">Next: Alvix Insurance →</a></nav>
+            </div>
+        </section>
     </main>
 
     <footer class="footer py-12 px-6 lg:px-8 mt-10">
         <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center footer-inner">
-            <div class="mb-4 md:mb-0"><a href="../../index.html" class="text-xl font-bold text-[#1D1B18]">Gautam Dodiya</a><p class="text-sm text-[#53433C] mt-2">© 2026 Gautam Dodiya. All rights reserved.</p></div>
-            <div class="flex flex-wrap gap-4"><a href="../../index.html" class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Home</a><a href="../index.html" class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">All Work</a><a href="../../systems/index.html" class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Systems</a><a href="../../approach/index.html" class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Approach</a><a href="../../about/index.html" class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">About</a><a href="../../resume/index.html" class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Resume</a><a href="../../contact/index.html" class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Contact</a></div>
-            <a href="#top" class="w-10 h-10 rounded-full bg-[#E7E2DC] flex items-center justify-center hover:bg-[#D6B35B] transition-colors mt-6 md:mt-0" aria-label="Back to top"><span class="material-symbols-outlined text-[#1D1B18]">arrow_upward</span></a>
+            <div class="mb-4 md:mb-0"><a href="../../index.html" class="text-xl font-bold text-[#1D1B18]">Gautam
+                    Dodiya</a>
+                <p class="text-sm text-[#53433C] mt-2">© 2026 Gautam Dodiya. All rights reserved.</p>
+            </div>
+            <div class="flex flex-wrap gap-4"><a href="../../index.html"
+                    class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Home</a><a
+                    href="../index.html" class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">All
+                    Work</a><a href="../../systems/index.html"
+                    class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Systems</a><a
+                    href="../../approach/index.html"
+                    class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Approach</a><a
+                    href="../../about/index.html"
+                    class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">About</a><a
+                    href="../../resume/index.html"
+                    class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Resume</a><a
+                    href="../../contact/index.html"
+                    class="text-[#53433C] hover:text-[#8C4E2D] font-medium transition-colors">Contact</a></div>
+            <a href="#top"
+                class="w-10 h-10 rounded-full bg-[#E7E2DC] flex items-center justify-center hover:bg-[#D6B35B] transition-colors mt-6 md:mt-0"
+                aria-label="Back to top"><span class="material-symbols-outlined text-[#1D1B18]">arrow_upward</span></a>
         </div>
     </footer>
-    <div id="lightbox" class="hidden opacity-0 fixed inset-0 z-[200] bg-black/90 flex items-center justify-center p-4 transition-opacity duration-300" role="dialog" aria-modal="true" aria-label="Full-size Search Console screenshot"><button id="lightbox-close" class="absolute top-4 right-5 text-white text-4xl leading-none" aria-label="Close image">&times;</button><img id="lightbox-img" src="" alt="" class="max-w-full max-h-[90vh] object-contain scale-95 transition-transform duration-300 rounded-lg"></div>    <script src="../../script.js"></script>
+    <div id="lightbox"
+        class="hidden opacity-0 fixed inset-0 z-[200] bg-black/90 flex items-center justify-center p-4 transition-opacity duration-300"
+        role="dialog" aria-modal="true" aria-label="Full-size Search Console screenshot"><button id="lightbox-close"
+            class="absolute top-4 right-5 text-white text-4xl leading-none"
+            aria-label="Close image">&times;</button><img id="lightbox-img" src="" alt=""
+            class="max-w-full max-h-[90vh] object-contain scale-95 transition-transform duration-300 rounded-lg"></div>
+    <script src="../../script.js"></script>
 </body>
+
 </html>
